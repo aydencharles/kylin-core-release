@@ -1,5 +1,5 @@
 # Kylin Core（麒麟核心）
-<img align='right' src='../assets/logo.png' width='220px' alt="kylin core logo">
+<img align='right' src='../assets/logo.png' width='120' style='border-radius: 28px;' alt="kylin core logo">
 
 [English](../README.md) | **简体中文**
 

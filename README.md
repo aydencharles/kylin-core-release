@@ -1,5 +1,5 @@
 # Kylin Core
-<img align='right' src='assets/logo.png' width='220px' alt="kylin core logo">
+<img align='right' src='assets/logo.png' width='120' style='border-radius: 28px;' alt="kylin core logo">
 
 **English** | [简体中文](./zh/README.md)
 
