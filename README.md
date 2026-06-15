@@ -7,8 +7,13 @@ A homebrew cheat loader and real-time game modifier for PS5, built for the PlayS
 
 [![Latest release](https://img.shields.io/github/v/release/aydencharles/kylin-core-release?label=Release&logo=github&color=blue)](https://github.com/aydencharles/kylin-core-release/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![GitHub License](https://img.shields.io/github/license/aydencharles/kylin-core-release)](./LICENSE)
 [![Platform](https://img.shields.io/badge/platform-PS5_(4.xx_–_12.xx)-brightgreen)]()
+
+## A quick look
+
+<p align="center">
+  <img src="assets/screenshots_01.jpeg" alt="kylin core screenshot" width="100%" style="border-radius: 12px;">
+</p>
 
 ## Features
 
