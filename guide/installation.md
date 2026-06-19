@@ -1,5 +1,9 @@
 # Installation
 
+<a href="https://ko-fi.com/kylincore"><img src="https://img.shields.io/badge/Ko--fi-Support-FF6433?style=for-the-badge&logo=kofi&logoColor=white" alt="Support Kylin Core on Ko-fi"></a>
+
+If you find this project helpful, please consider supporting its continued development. Your support is greatly appreciated!
+
 ## Requirements
 
 - A jailbroken PS5 with an active ELF loader
@@ -10,11 +14,15 @@
 | File | Description |
 |---|---|
 | `kylin-core.elf` | Payload binary, loaded via PLDMGR |
-| `IV0000-KYLN00003_00-KYLINCORELAUNCHR.pkg` | System app package |
+| `IV0000-KYLN00003_00-KYLINCORELAUNCHR_GAME_SECTION.pkg` | System app package — installs launcher under **Game** category |
+| `IV0000-KYLN00003_00-KYLINCORELAUNCHR_MEDIA_SECTION.pkg` | System app package — installs launcher under **Media** category |
+
+> [!NOTE]
+> Choose **one** PKG based on where you want the launcher to appear on the home screen.
 
 ## Steps
 
-1. Copy `kylin-core.elf` and `IV0000-KYLN00003_00-KYLINCORELAUNCHR.pkg` to the root of a USB drive
+1. Copy `kylin-core.elf` and your chosen `.pkg` file to the root of a USB drive
 
 2. Insert the USB drive into your PS5
 

@@ -38,7 +38,7 @@
 
 ### 快速开始
 
-1. 将 `kylin-core.elf` 和 `IV0000-KYLN00003_00-KYLINCORELAUNCHR.pkg` 复制到 U 盘
+1. 将 `kylin-core.elf` 和 `.pkg` 文件复制到 U 盘
 2. 通过 [PS5 Payload Manager (PLDMGR)](https://github.com/itsPLK/ps5-payload-manager) 加载 `kylin-core.elf`
 3. 通过 **设置 → 调试设置** 安装 `.pkg`
 4. 从主屏幕启动 **Kylin Core**
@@ -71,7 +71,9 @@
 
 ## 赞助
 
-- [Ko-fi](https://ko-fi.com/kylincore)：支持 Kylin Core 的开发
+<a href="https://ko-fi.com/kylincore"><img src="https://img.shields.io/badge/Ko--fi-Support-FF6433?style=for-the-badge&logo=kofi&logoColor=white" alt="在 Ko-fi 上支持 Kylin Core"></a>
+
+如果您觉得这个项目对您有所帮助，请考虑支持它的持续开发。感谢您的支持！
 
 ## 致谢
 

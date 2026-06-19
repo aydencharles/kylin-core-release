@@ -38,7 +38,7 @@ See [`guide/installation.md`](guide/installation.md)
 
 ### Quick Start
 
-1. Copy `kylin-core.elf` and `IV0000-KYLN00003_00-KYLINCORELAUNCHR.pkg` to a USB drive
+1. Copy `kylin-core.elf` and a `.pkg` file to a USB drive
 2. Load `kylin-core.elf` via [PS5 Payload Manager (PLDMGR)](https://github.com/itsPLK/ps5-payload-manager)
 3. Install `.pkg` via **Settings → Debug Settings**
 4. Launch **Kylin Core** from the home screen
@@ -71,7 +71,9 @@ All cheat files are stored at `/data/kylin/cheats`.
 
 ## Sponsor
 
-- [Ko-fi](https://ko-fi.com/kylincore): support the development of Kylin Core
+<a href="https://ko-fi.com/kylincore"><img src="https://img.shields.io/badge/Ko--fi-Support-FF6433?style=for-the-badge&logo=kofi&logoColor=white" alt="Support Kylin Core on Ko-fi"></a>
+
+If you find this project helpful, please consider supporting its continued development. Your support is greatly appreciated!
 
 ## Credit
 
