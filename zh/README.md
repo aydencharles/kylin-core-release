@@ -71,7 +71,7 @@
 
 ## 赞助
 
-<a href="https://ko-fi.com/kylincore"><img src="https://img.shields.io/badge/Ko--fi-Support-FF6433?style=for-the-badge&logo=kofi&logoColor=white" alt="在 Ko-fi 上支持 Kylin Core"></a>
+<a href="https://ko-fi.com/0xp0co"><img src="https://img.shields.io/badge/Ko--fi-Support-FF6433?style=for-the-badge&logo=kofi&logoColor=white" alt="在 Ko-fi 上支持 Kylin Core"></a>
 
 如果您觉得这个项目对您有所帮助，请考虑支持它的持续开发。感谢您的支持！
 
