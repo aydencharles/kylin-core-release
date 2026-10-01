@@ -13,31 +13,24 @@
 
 | 文件 | 说明 |
 |---|---|
-| `kylin-core.elf` | Payload 二进制，通过 PLDMGR 加载 |
-| `IV0000-KYLN00003_00-KYLINCORELAUNCHR_GAME_SECTION.pkg` | 系统应用安装包 — 安装后 Launcher 显示在 **游戏** 分类下 |
-| `IV0000-KYLN00003_00-KYLINCORELAUNCHR_MEDIA_SECTION.pkg` | 系统应用安装包 — 安装后 Launcher 显示在 **媒体** 分类下 |
-
-> [!NOTE]
-> 根据你希望 Launcher 出现在主屏幕的哪个位置，选择**其中一个** PKG 安装即可。
+| `kylin-core.elf` | payload 本体，包含守护进程、金手指引擎与网页界面 |
 
 ## 安装步骤
 
-1. 将 `kylin-core.elf` 和你选择的 `.pkg` 文件复制到 U 盘根目录
+1. 用 **PS5 Payload Manager (PLDMGR)** 加载 `kylin-core.elf`
 
-2. 将 U 盘插入 PS5
+2. 等待就绪通知。**Kylin Core** 入口就在主屏幕的**媒体**分类下
 
-3. 打开 **PS5 Payload Manager (PLDMGR)**，加载 `kylin-core.elf`
-
-4. 进入 **设置 → 调试设置**，安装 `.pkg` 文件
-
-5. 从主屏幕启动 **Kylin Core**
+3. 从主屏幕启动 **Kylin Core**
 
 > [!IMPORTANT]
 > 启动应用前必须先通过 PLDMGR 加载 `kylin-core.elf`，否则 UI 无法正常显示。
 
+如果主屏幕上始终没有出现入口，请检查 `/data/kylin/logs/kylin-core.log`。
+
 ## 金手指文件
 
-将金手指文件（`.shn`、`.mc4`、`.json`）放入：
+将金手指文件（`.json`、`.shn`、`.mc4`、`.ShnExt`）放入：
 
 ```
 /data/kylin/cheats
@@ -48,5 +41,6 @@
 
 ## 卸载
 
-1. 从主屏幕删除应用（Options → 删除）
-2. 如不再需要，删除 `/data/kylin/cheats` 目录
+1. 停止 payload（重启主机，或在界面里结束守护进程）
+2. 从主屏幕删除 **Kylin Core** 入口（Options → 删除）
+3. 如不再需要，删除 `/data/kylin` 目录

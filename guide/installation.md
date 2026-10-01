@@ -13,31 +13,24 @@ If you find this project helpful, please consider supporting its continued devel
 
 | File | Description |
 |---|---|
-| `kylin-core.elf` | Payload binary, loaded via PLDMGR |
-| `IV0000-KYLN00003_00-KYLINCORELAUNCHR_GAME_SECTION.pkg` | System app package — installs launcher under **Game** category |
-| `IV0000-KYLN00003_00-KYLINCORELAUNCHR_MEDIA_SECTION.pkg` | System app package — installs launcher under **Media** category |
-
-> [!NOTE]
-> Choose **one** PKG based on where you want the launcher to appear on the home screen.
+| `kylin-core.elf` | The payload. It contains the daemon, the cheat engine, and the web UI |
 
 ## Steps
 
-1. Copy `kylin-core.elf` and your chosen `.pkg` file to the root of a USB drive
+1. Load `kylin-core.elf` with **PS5 Payload Manager (PLDMGR)**
 
-2. Insert the USB drive into your PS5
+2. Wait for the ready notification. The **Kylin Core** tile is under **Media** on the home screen
 
-3. Open **PS5 Payload Manager (PLDMGR)** and load `kylin-core.elf`
-
-4. Go to **Settings → Debug Settings** and install the `.pkg` file
-
-5. Launch **Kylin Core** from the home screen
+3. Launch **Kylin Core** from the home screen
 
 > [!IMPORTANT]
 > You must load `kylin-core.elf` via PLDMGR **before** launching the app. Otherwise the UI will not load properly.
 
+If the tile does not show up, check `/data/kylin/logs/kylin-core.log`.
+
 ## Cheat Files
 
-Place your cheat files (`.shn`, `.mc4`, `.json`) into:
+Place your cheat files (`.json`, `.shn`, `.mc4`, `.ShnExt`) into:
 
 ```
 /data/kylin/cheats
@@ -48,5 +41,6 @@ Place your cheat files (`.shn`, `.mc4`, `.json`) into:
 
 ## Uninstallation
 
-1. Delete the app from the home screen (Options → Delete)
-2. Remove `/data/kylin/cheats` if no longer needed
+1. Stop the payload (reboot the console, or end the daemon from the UI)
+2. Delete the **Kylin Core** tile from the home screen (Options → Delete)
+3. Remove `/data/kylin` if no longer needed
