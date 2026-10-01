@@ -59,7 +59,7 @@ as a persistent daemon instead of a one-shot loader.
 
 - **Real-time cheat toggle** — enable or disable a cheat while the game is running; the patch is applied or reverted immediately
 - **Automatic game detection** — the daemon resolves the running title by itself, so no manual title ID is needed
-- **Four cheat formats** — `.json`, `.shn`, `.mc4`, and `.ShnExt`, all loaded from a single flat directory
+- **Four cheat formats** — `.json`, `.shn`, `.mc4`, and `.ShnExt` (Alpha), all loaded from a single flat directory
 - **Hot reload** — cheat file edits apply immediately, with no restart
 - **Built-in web UI** — served straight from the payload on port `9023` and opened by the home-screen tile
 - **Home-screen tile** — the tile is registered automatically under the **Media** section of the home screen
@@ -98,7 +98,7 @@ The web UI is localized in **简体中文**, **English**, and **한국어**.
 | PS5 native games | Supported |
 | PS5 games with APR | Supported |
 | Firmware | Jailbroken consoles on **4.0.3 through 13.60** |
-| Cheat formats | `.json` · `.shn` · `.mc4` · `.ShnExt` |
+| Cheat formats | `.json` · `.shn` · `.mc4` · `.ShnExt` (Alpha) |
 
 <br>
 
@@ -119,6 +119,10 @@ Cheat files live in one directory and follow one naming rule:
 - One file is resolved per title, in the order `.json` → `.shn` → `.mc4` → `.ShnExt`. The first match wins, so a `.json` file shadows an `.shn` file for the same title and version.
 
 Editing a cheat file takes effect right away, even mid-session — no restart.
+
+> [!NOTE]
+> `.ShnExt` support is Alpha and not fully supported yet. `.json`, `.shn`, and
+> `.mc4` are the fully supported formats.
 
 <br>
 

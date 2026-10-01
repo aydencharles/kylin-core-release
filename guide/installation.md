@@ -38,6 +38,7 @@ Place your cheat files (`.json`, `.shn`, `.mc4`, `.ShnExt`) into:
 
 - Flat directory only — no subfolders
 - The tool auto-detects the running game and matches available cheats
+- `.ShnExt` is Alpha and not fully supported yet; `.json`, `.shn` and `.mc4` are the fully supported formats
 
 ## Uninstallation
 
